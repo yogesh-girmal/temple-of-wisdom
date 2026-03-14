@@ -22,7 +22,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .nav-container { display: flex; align-items: center; justify-content: space-between; height: 70px; }
 .nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; color: #fff; }
-.nav-logo img { border-radius: 8px; background: #1a2744; height: 44px; width: auto; max-width: 200px; object-fit: contain; }
+.nav-logo img { border-radius: 8px; background: #1a2744; height: 40px; width: auto; max-width: 160px; object-fit: contain; }
 .nav-menu { display: flex; gap: 28px; }
 .nav-link { font-size: 0.92rem; font-weight: 500; color: rgba(255,255,255,0.85); transition: color 0.2s; }
 .nav-link:hover { color: #c8922a; }
@@ -103,9 +103,9 @@ img { max-width: 100%; height: auto; display: block; }
 .program-card p { font-size: 0.93rem; color: #636e72; }
 
 /* === Impact / Counters === */
-.impact { background: linear-gradient(135deg, #1a2744, #2c3e6b); color: #fff; }
-.impact .section-header h2 { color: #fff; }
-.impact .section-line { background: #c8922a; }
+.section.impact { background: linear-gradient(135deg, #1a2744, #2c3e6b); color: #fff; }
+.section.impact .section-header h2 { color: #fff; }
+.section.impact .section-line { background: #c8922a; }
 .counters-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; text-align: center; }
 .counter-card { padding: 20px; }
 .counter-number { font-size: 3rem; font-weight: 800; color: #c8922a; }
