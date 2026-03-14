@@ -15,20 +15,20 @@ img { max-width: 100%; height: auto; display: block; }
 /* === Navbar === */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  background: rgba(255,255,255,0.97);
+  background: rgba(26,39,68,0.97);
   backdrop-filter: blur(10px);
-  box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.15);
   transition: box-shadow 0.3s;
 }
 .nav-container { display: flex; align-items: center; justify-content: space-between; height: 70px; }
-.nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; color: #1a2744; }
-.nav-logo img { border-radius: 50%; }
+.nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; color: #fff; }
+.nav-logo img { border-radius: 8px; background: #1a2744; }
 .nav-menu { display: flex; gap: 28px; }
-.nav-link { font-size: 0.92rem; font-weight: 500; color: #4a5568; transition: color 0.2s; }
+.nav-link { font-size: 0.92rem; font-weight: 500; color: rgba(255,255,255,0.85); transition: color 0.2s; }
 .nav-link:hover { color: #c8922a; }
 
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 4px; }
-.nav-toggle span { display: block; width: 24px; height: 2.5px; background: #1a2744; border-radius: 2px; transition: 0.3s; }
+.nav-toggle span { display: block; width: 24px; height: 2.5px; background: #fff; border-radius: 2px; transition: 0.3s; }
 
 /* === Hero === */
 .hero {
@@ -162,9 +162,9 @@ img { max-width: 100%; height: auto; display: block; }
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
   .nav-menu {
-    position: fixed; top: 70px; left: 0; right: 0; background: #fff;
+    position: fixed; top: 70px; left: 0; right: 0; background: #1a2744;
     flex-direction: column; padding: 20px 24px; gap: 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
     transform: translateY(-120%); transition: transform 0.3s;
   }
   .nav-menu.active { transform: translateY(0); }
